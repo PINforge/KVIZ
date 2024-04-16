@@ -1,0 +1,117 @@
+/* Base styles */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 800px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.title {
+    text-align: center;
+    color: #007bff; /* Change color to blue */
+    font-size: 60px; /* Increase font size */
+    margin-bottom: 20px; /* Decrease margin */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add text shadow for depth */
+    font-weight: bold; /* Make the title bold */
+}
+
+/* Question heading styles */
+.question-heading {
+    text-align: center;
+    color: #333;
+    font-size: 28px; /* Adjust the font size for the question heading */
+    margin-bottom: 20px;
+}
+
+/* Question text styles */
+.question-text {
+    color: #555; /* Adjust the color of the question text */
+    font-size: 80px; /* Adjust the font size of the question text */
+    margin-bottom: 20px;
+}
+
+/* Indication of current question */
+.current-question {
+    text-align: center;
+    font-size: 50px; /* Adjust the font size for the indication of the current question */
+    color: #777; /* Adjust the color of the indication of the current question */
+    margin-bottom: 10px;
+}
+
+/* Category styles */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.category {
+    padding: 30px;
+    background-color: #87b6e9;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 32px;
+}
+
+.category:hover {
+    background-color: #8eb0d4;
+}
+
+/* Button styles */
+.btn {
+    margin: 20px;
+    padding: 15px 30px;
+    background-color: #93bae4;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+.btn:hover {
+    background-color: #98badf;
+    transform: translateY(-2px); /* Add a slight upward movement on hover */
+}
+
+/* Hidden elements */
+.hidden {
+    display: none;
+}
+
+/* Error message styles */
+.error-msg {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Correct answer styles */
+.correct-answer {
+    background-color: #198754 !important;
+    color: #f7f7f7 !important;
+}
+
+/* Display answer styles */
+.display-answer {
+    color: #ea6020;
+    font-weight: bold;
+}
